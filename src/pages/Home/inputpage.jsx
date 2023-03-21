@@ -1,15 +1,15 @@
 // drag drop file component
-
 import React from "react";
+import { useState } from "react";
 
-function handleFile(files) {
-  alert("Number of files: " + files.length);
-}
 export const DragDropFile = () => {
-  // drag state
   const [dragActive, setDragActive] = React.useState(false);
-  // ref
   const inputRef = React.useRef(null);
+
+  function handleFile(files) {
+    const filePath = URL.createObjectURL(files[0]);
+    alert("Uploaded file path: " + filePath);
+  }
 
   // handle drag events
   const handleDrag = function (e) {
@@ -80,5 +80,42 @@ export const DragDropFile = () => {
         ></div>
       )}
     </form>
+  );
+};
+
+export const ProcessingButton = () => {
+  const [isProcessing, setIsProcessing] = useState(false);
+  const [inputValue, setInputValue] = useState("");
+
+  const handleButtonClick = () => {
+    setIsProcessing(true);
+    // API call
+    setTimeout(() => {
+      setIsProcessing(false);
+      setInputValue("");
+    }, 3000);
+  };
+
+  const handleInputChange = (event) => {
+    setInputValue(event.target.value);
+  };
+
+  return (
+    <div className="container">
+      <input
+        className="input-box"
+        type="text"
+        value={inputValue}
+        onChange={handleInputChange}
+        placeholder="Enter Your URL"
+      />
+      <button
+        className="processing-button"
+        onClick={handleButtonClick}
+        disabled={isProcessing}
+      >
+        {isProcessing ? "Processing..." : "Submit"}
+      </button>
+    </div>
   );
 };

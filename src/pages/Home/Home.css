@@ -24,3 +24,39 @@
     background-color: #f2f2f2;
   }
   
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .input-box {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 300px;
+  }
+  
+  .processing-button {
+    background-color: #1e4f30;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    width: 150px;
+  }
+  
+  .processing-button:hover {
+    background-color: #14331f;
+  }
+  
+  .processing-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }

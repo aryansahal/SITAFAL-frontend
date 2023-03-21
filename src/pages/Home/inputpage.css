@@ -12,8 +12,8 @@ body {
   }
   
   #form-file-upload {
-    height: 16rem;
-    width: 28rem;
+    height: 10rem;
+    width: 30rem;
     max-width: 100%;
     text-align: center;
     position: relative;
@@ -36,7 +36,7 @@ body {
   }
   
   #label-file-upload.drag-active {
-    background-color: #ffffff;
+    background-color: #e8c6c6;
   }
   
   .upload-button {
