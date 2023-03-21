@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "https://sitafal.ai/static/css/main.aa8cdcdb.css",
+    "main.js": "https://sitafal.ai/static/js/main.ffc5c8a5.js",
+    "static/js/787.71e672d5.chunk.js": "https://sitafal.ai/static/js/787.71e672d5.chunk.js",
+    "index.html": "https://sitafal.ai/index.html",
+    "main.aa8cdcdb.css.map": "https://sitafal.ai/static/css/main.aa8cdcdb.css.map",
+    "main.ffc5c8a5.js.map": "https://sitafal.ai/static/js/main.ffc5c8a5.js.map",
+    "787.71e672d5.chunk.js.map": "https://sitafal.ai/static/js/787.71e672d5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.aa8cdcdb.css",
+    "static/js/main.ffc5c8a5.js"
+  ]
+}
