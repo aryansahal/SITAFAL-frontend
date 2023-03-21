@@ -1,0 +1,37 @@
+.vision-container {
+    margin: 2rem;
+    padding: 2rem;
+    background-color: #fff;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    border-radius: 0.5rem;
+  }
+  
+  .vision-container h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .vision-container p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+  }
+  
+  .link-button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .link-button:hover {
+    background-color: #0062cc;
+  }
+  
